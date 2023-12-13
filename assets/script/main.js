@@ -8,7 +8,7 @@ function jumpHandler() {
 }
 
 
-// (1) frontend interaction
+// (1) frontend interaction //
 let frontend = document.querySelector('a:nth-of-type(1)')
 
 frontend.addEventListener('click', scale)
@@ -20,7 +20,7 @@ function scale() {
 
 
 
-// // (2) design interaction
+//    (2) design interaction  //
 let design = document.querySelector('a:nth-of-type(2)')
 
 design.addEventListener('click', rotate)
@@ -30,3 +30,16 @@ design.classList.toggle('rotate')
 
 console.log('a:nth-of-type(2)');
 
+
+
+//    & interaction      //
+let and  = document.querySelector('a:nth-of-type(3)')
+
+and.addEventListener('click', slide)
+and.addEventListener('animationed', slide)
+
+function scale() {
+  and.classList.toggle('slide')
+}
+
+console.log('a:nth-of-type(3)')

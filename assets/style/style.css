@@ -119,4 +119,39 @@ a:nth-of-type(2) {
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
+ 
+
+
+ /* & Animations  */
+ a:nth-of-type(3) {
+  background: #e89bd1;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+@keyframes slide-animation {
+  0%{
+     /* nothing  */
+  }
+  25%{
+    translate: 4em 0;
+    rotate: 0deg;
+  }
+  50%{
+    translate: 4em 0;
+    rotate: 180deg;
+  }
+  75%{
+    translate: -10em 0;
+  }
+  100%{}
+}
+
+.slide {
+  animation-name: slide;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
 
