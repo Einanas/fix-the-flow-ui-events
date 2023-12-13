@@ -39,6 +39,7 @@ a:hover {
 
 /* UI Event Classes */
 
+
 /* Jump animation on the interaction link */
 a:nth-of-type(12) {
   position: relative;
@@ -79,3 +80,43 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+
+/*      FRONTEN BUTTON       */
+.scale {
+  animation-name: scale;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1; 
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+/*       DESIGN BUTTON      */
+a:nth-of-type(2) {
+  position: relative;
+  background: #4905e3;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+@keyframes rotate-animation {
+  0% {
+    transform: rotate  0deg;
+  }
+  
+  100% {
+    transform: rotate  180deg;
+  }
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
