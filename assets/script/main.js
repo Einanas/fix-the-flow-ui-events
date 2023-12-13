@@ -23,7 +23,6 @@ function scale() {
 //    (2) design interaction  //
 let design = document.querySelector('a:nth-of-type(2)')
 
-
 design.addEventListener('click', rotate)
 
 function rotate () {
@@ -39,10 +38,27 @@ console.log('a:nth-of-type(2)');
 let and  = document.querySelector('a:nth-of-type(3)')
 
 and.addEventListener('click', slide)
-and.addEventListener('animationed', slide)
+// and.addEventListener('animationed', slide)
 
-function scale() {
+function slide() {
   and.classList.toggle('slide')
 }
 
 console.log('a:nth-of-type(3)')
+
+
+//      development interaction     //
+let development = document.querySelector('a:nth-of-type(4)')
+
+development.addEventListener('click', rotate)
+development.addEventListener('mousedown', expand)
+
+function rotate() {
+  development.classList.toggle('rotate')
+}
+
+function expand() {
+  development.classList.toggle('expand')
+}
+
+console.log('a:nth-of-type(4)')

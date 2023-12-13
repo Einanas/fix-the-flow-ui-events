@@ -82,6 +82,12 @@ a:nth-of-type(12) {
 /* Jouw animaties */
 
 /*      FRONTEN BUTTON       */
+a:nth-of-type(1) {
+  background: #9d7beb;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
 .scale {
   animation-name: scale;
   animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
@@ -98,6 +104,8 @@ a:nth-of-type(12) {
 /*       DESIGN BUTTON      */
 a:nth-of-type(2) {
   background: #4905e3;
+  color: var(--secondary);
+  border-color: var(--secondary);
 
 }
 
@@ -115,10 +123,7 @@ a:nth-of-type(2) {
   animation-name: rotate-animation;
   animation-timing-function: ease-in-out;
   animation-duration: 2s;
-  animation-iteration-count:;
   animation-fill-mode: forwards;
-  background-color: pink;
-  tr()
 }
  
 
@@ -136,11 +141,11 @@ a:nth-of-type(2) {
   }
   25%{
     translate: 4em 0;
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   50%{
     translate: 4em 0;
-    rotate: 180deg;
+    transform: rotate(180deg);
   }
   75%{
     translate: -10em 0;
@@ -149,10 +154,48 @@ a:nth-of-type(2) {
 }
 
 .slide {
-  animation-name: slide;
+  animation-name: slide-animation;
   animation-timing-function: ease-in;
   animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+/*     DEVELOPMENT BUTTON     */
+a:nth-of-type(4) {
+  background: #e8d69b;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+@keyframes rotate-animation {
+  0% {
+
+  }
+  15% {
+    translate: rotateX(45deg);
+  }
+  30% {
+    translate: rotateX(90deg);
+  }
+  50% {
+    translate: rotateX(0deg);
+  }
+  70%{
+    translate: rotateX(315deg);
+  }
+  85% {
+    translate: rotateX(270deg);
+  }
+
+  100% {
+
+  }
+}
+
+.rotate {
+  animation-name: rotate-animation;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 
