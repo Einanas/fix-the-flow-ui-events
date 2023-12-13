@@ -23,10 +23,13 @@ function scale() {
 //    (2) design interaction  //
 let design = document.querySelector('a:nth-of-type(2)')
 
-design.addEventListener('click', rotate)
-design.addEventListener('animationed', rotate )
 
-design.classList.toggle('rotate')
+design.addEventListener('click', rotate)
+
+function rotate () {
+  design.classList.toggle('rotate')
+}
+
 
 console.log('a:nth-of-type(2)');
 

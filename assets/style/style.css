@@ -97,27 +97,28 @@ a:nth-of-type(12) {
 
 /*       DESIGN BUTTON      */
 a:nth-of-type(2) {
-  position: relative;
   background: #4905e3;
-  color: var(--secondary);
-  border-color: var(--secondary);
+
 }
 
 @keyframes rotate-animation {
   0% {
-    transform: rotate  0deg;
+    transform: rotate(0deg);
   }
   
   100% {
-    transform: rotate  180deg;
+    transform: rotate(180deg);
   }
 }
 
 .rotate {
-  animation-name: rotate;
+  animation-name: rotate-animation;
   animation-timing-function: ease-in-out;
   animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-iteration-count:;
+  animation-fill-mode: forwards;
+  background-color: pink;
+  tr()
 }
  
 
