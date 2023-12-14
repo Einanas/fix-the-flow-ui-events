@@ -128,7 +128,7 @@ a:nth-of-type(2) {
  
 
 
- /* & Animations  */
+ /*     &   BUTTONS     */
  a:nth-of-type(3) {
   background: #e89bd1;
   color: var(--secondary);
@@ -167,24 +167,24 @@ a:nth-of-type(4) {
   border-color: var(--secondary);
 }
 
-@keyframes rotate-animation {
+@keyframes rotate2 {
   0% {
 
   }
   15% {
-    translate: rotateX(45deg);
+    transform: rotate(20deg);
   }
   30% {
-    translate: rotateX(90deg);
+    transform: rotate(45deg);
   }
   50% {
-    translate: rotateX(0deg);
+    transform: rotate(0deg);
   }
   70%{
-    translate: rotateX(315deg);
+    transform: rotate(-20deg);
   }
   85% {
-    translate: rotateX(270deg);
+    transform: rotate(-45deg);
   }
 
   100% {
@@ -192,10 +192,39 @@ a:nth-of-type(4) {
   }
 }
 
-.rotate {
-  animation-name: rotate-animation;
-  animation-duration: 500ms;
+.rotate2 {
+  animation-name: rotate2;
+  animation-duration: 40ms;
+  animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
 
+
+
+/*     SPRINT 5 BUTTON      */
+a:nth-of-type(5) {
+  background: #69e66f;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+
+@keyframes expand {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(4, 4)
+  }
+}
+
+.expand {
+  animation-name: expand;
+  animation-duration: 3s;
+  /* animation-delay: 3s; */
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  /* animation-fill-mode: ; */
+}

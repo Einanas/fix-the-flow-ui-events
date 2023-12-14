@@ -47,18 +47,87 @@ function slide() {
 console.log('a:nth-of-type(3)')
 
 
+
+
+
 //      development interaction     //
 let development = document.querySelector('a:nth-of-type(4)')
 
-development.addEventListener('click', rotate)
-development.addEventListener('mousedown', expand)
+development.addEventListener('click', rotate2)
+development.addEventListener('animationend', rotate2)
 
-function rotate() {
-  development.classList.toggle('rotate')
-}
-
-function expand() {
-  development.classList.toggle('expand')
+function rotate2() {
+  development.classList.toggle('rotate2')
 }
 
 console.log('a:nth-of-type(4)')
+
+
+
+
+//         Sprint 5 interaction         //
+let sprint5 = document.querySelector('a:nth-of-type(5)') // Verander dit naar het gewenste element
+let isMouseDown = false;
+let mousedownTimeout;
+
+sprint5.addEventListener('mousedown', function () {
+  isMouseDown = true;
+  clearTimeout(mousedownTimeout);
+  console.log('Mousedown event detected.');
+
+  mousedownTimeout = setTimeout(function () {
+    isMouseDown = false;
+    expand();
+    console.log('Expand class added.');
+  }, 3000);
+});
+
+function expand() {
+  mousedownElement.classList.toggle('expand');
+}
+
+
+  //               fix interaction       //
+let fix = document. querySelector('a:nth-of-type(6)')
+
+
+// // rotate js
+// development.addEventListener('click', rotate2)
+// development.addEventListener('animationend', rotate2)
+// // development.addEventListener('mousedown', expand)
+
+// function rotate2() {
+//   development.classList.toggle('rotate2')
+// }
+
+// // expand js
+
+// development.addEventListener('mousedown', expand)
+// // development.addEventListener('animationend', expand)
+
+// function expand() {
+//   development.classList.toggle('expand')
+// }
+
+
+
+// // mousedown gpt
+// let mousedownTimeout;
+
+// development.addEventListener('mousedown', function() {
+//   // Clear any previous timeout to avoid multiple executions
+//   clearTimeout(mousedownTimeout);
+  
+//   // Set a timeout of 3000 milliseconds (3 seconds) to trigger the expand animation
+//   mousedownTimeout = setTimeout(expand, 3000);
+// });
+
+// development.addEventListener('animationend', rotate2);
+
+// function rotate2() {
+//   development.classList.toggle('rotate2');
+// }
+
+// function expand() {
+//   development.classList.toggle('expand');
+// }
