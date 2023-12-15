@@ -70,7 +70,7 @@ console.log('a:nth-of-type(4)')
 
 
 //        (5) Sprint 5 interaction         //
-let sprint5 = document.querySelector('a:nth-of-type(5)') // Verander dit naar het gewenste element
+let sprint5 = document.querySelector('a:nth-of-type(5)') 
 
 // sprint5.addEventListener('click', expand)
 // sprint5.addEventListener('animationend', expand)
@@ -108,72 +108,72 @@ console.log('a:nth-of-type(5)')
 
 
   //             (6)  fix interaction       //
-let fix = document. querySelector('a:nth-of-type(6)')
+// let fix = document. querySelector('a:nth-of-type(6)')
 
-fix.addEventListener('click', disappear)
-fix.addEventListener('animationend', disappear)
-
-
-function disappear() {
-  fix.classList.toggle('disappear')
-}
-
-console.log('a:nth-of-type(6)')
-//     HOVER FUNCTION     //
-
-// let fix = document.querySelector("a:nth-of-type(6)");
-
+// fix.addEventListener('click', disappear)
 // fix.addEventListener('animationend', disappear)
 
-// fix.addEventListener("mouseover", hovered, false);
-// fix.addEventListener("mouseout", hoveredOut, false);
-
-// function hovered(e) {
-//     console.log("Hovered!");
-// }
-
-// function hoveredOut(e) {
-//     console.log("Hovered Away!");
-// }
 
 // function disappear() {
 //   fix.classList.toggle('disappear')
 // }
 
+// console.log('a:nth-of-type(6)')
+//     HOVER FUNCTION     //
+
+let fix = document.querySelector("a:nth-of-type(6)");
+
+fix.addEventListener('animationend', disappear)
+
+fix.addEventListener("mouseover", hovered, false);
+fix.addEventListener("mouseout", hoveredOut, false);
+
+function hovered(e) {
+    console.log("Hovered!");
+}
+
+function hoveredOut(e) {
+    console.log("Hovered Away!");
+}
+
+function disappear() {
+  fix.classList.toggle('disappear')
+}
+console.log('a:nth-of-type(6)')
 
 
 
 //            (7) the interaction            //
-let the = document.querySelector('a:nth-of-type(7)')
+// let the = document.querySelector('a:nth-of-type(7)')
 
-the.addEventListener('click', dimensional)
-the.addEventListener('animationend', dimensional)
+// the.addEventListener('click', dimensional)
+// the.addEventListener('animationend', dimensional)
 
-function dimensional() {
-  the.classList.toggle('dimensional')
-}
+// function dimensional() {
+//   the.classList.toggle('dimensional')
+// }
 
 //         DOUBLE CLICK FUNCTION          //
 
-// let the = document.querySelector('a:nth-of-type(7)');
+let the = document.querySelector('a:nth-of-type(7)');
 
-// the.addEventListener('animationend', misformed)
-// the.addEventListener('dblclick', doSomething, false)
+the.addEventListener('animationend', misformed)
+the.addEventListener('dblclick', doSomething, false)
 
-// function doSomething(e) {
-//     console.log('Mouse clicked on something...twice!');
-// }
+function doSomething(e) {
+    console.log('Mouse clicked on something...twice!');
+}
 
-// function misformed() {
-//   the.classList.toggle('misformed')
-// }
+function misformed() {
+  the.classList.toggle('misformed')
+}
 
 console.log('a:nth-of-type(7)')
 
 
 
 
-//             flow interaction            //
+//            (8) flow interaction            //
 let flow = document.querySelector('a:nth-of-type(8)')
 
 // flow.addEventListener('click', flying)
@@ -216,49 +216,3 @@ console.log('a:nth-of-type(8)')
 
 
 
-
-
-
-
-
-
-// // rotate js
-// development.addEventListener('click', rotate2)
-// development.addEventListener('animationend', rotate2)
-// // development.addEventListener('mousedown', expand)
-
-// function rotate2() {
-//   development.classList.toggle('rotate2')
-// }
-
-// // expand js
-
-// development.addEventListener('mousedown', expand)
-// // development.addEventListener('animationend', expand)
-
-// function expand() {
-//   development.classList.toggle('expand')
-// }
-
-
-
-// // mousedown gpt
-// let mousedownTimeout;
-
-// development.addEventListener('mousedown', function() {
-//   // Clear any previous timeout to avoid multiple executions
-//   clearTimeout(mousedownTimeout);
-  
-//   // Set a timeout of 3000 milliseconds (3 seconds) to trigger the expand animation
-//   mousedownTimeout = setTimeout(expand, 3000);
-// });
-
-// development.addEventListener('animationend', rotate2);
-
-// function rotate2() {
-//   development.classList.toggle('rotate2');
-// }
-
-// function expand() {
-//   development.classList.toggle('expand');
-// }
