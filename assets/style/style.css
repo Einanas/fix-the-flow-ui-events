@@ -81,7 +81,7 @@ a:nth-of-type(12) {
 
 /* Jouw animaties */
 
-/*      FRONTEN BUTTON       */
+/*      FRONTEND BUTTON       */
 a:nth-of-type(1) {
   background: #9d7beb;
   color: var(--secondary);
@@ -228,3 +228,123 @@ a:nth-of-type(5) {
   animation-fill-mode: forwards;
   /* animation-fill-mode: ; */
 }
+
+
+
+/*             FIX BUTTON            */
+a:nth-of-type(6) {
+  background: #e66969;
+  color: var(--secondary);
+  border-color: #f8c0c0;
+}
+
+@keyframes disappear {
+  0% {
+    /* original state */
+    /* expand a 2 times and then disappear in 5 steps from 0% */
+  }
+  20% {
+    transform: scale(2);
+  }
+  40% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(2);
+  }
+  80% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0.1;
+    /* invisible */
+  }
+}
+
+.disappear {
+  animation-name: disappear;
+  animation-duration: 7s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-iteration-count: 1;
+}
+
+
+/*             THE BUTTON            */
+a:nth-of-type(7) {
+  background: #6991e6;
+  color: var(--secondary);
+  border-color: whitesmoke;
+}
+
+@keyframes dimensional {
+  0% {
+    /* misforming, first stretching side ways, then upwards, diagonally, finally becoming small */
+  }
+  14% {
+    /* transform: translate3d(-0.06turn, 18deg); */
+    translate: rotate(180deg);
+  }
+  29% {
+    /* transform: translate3d(0.4, 0, 0.5, 1.2, 60, 10); */
+    translate: rotate(360deg);
+  }
+  43% {
+    /* transform: translate3d(0, 1, 1, 0, 0, 0); */
+    translate: rotate(180deg);
+  }
+  57% {
+    /* transform: translate3d(0.1, 1, -0.3, 1, 0, 0); */
+  }
+  71% {
+
+  }
+  86% {
+
+  }
+  100% {
+
+  }
+}
+
+.dimensional {
+  animation-name: dimensional;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+/*                   FLOW BUTTON                  */
+a:nth-of-type(8) {
+  background: #dc4646;
+  color: var(--secondary);
+  border-color: rgb(240, 171, 122);
+}
+
+@keyframes flying {
+  0% {
+    
+  }
+  30%{
+    transform: scale(1, 1) translateY(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: scale(1, 1) translateY(-0.5rem) rotate(-2deg);
+  }
+}
+
+.flying {
+  animation-name: flying;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-delay: 1s;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
